@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../bootstrap/bootstrap.fa.min.css" />
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -13,13 +13,12 @@
       referrerpolicy="no-referrer"
     />
     <title>پنل مدیریت مدیرخونه</title>
-    
   </head>
   <body>
     <!-- navbar -->
     <nav class="text-center">
       <div class="container-fluid">
-        <div class="row navbar-row  p-2 border-bottom">
+        <div class="row navbar-row p-2 border-bottom">
           <div class="navbar-item col-3" style="border-left: 3px dotted white">
             <form text-center>
               <input
@@ -73,122 +72,576 @@
     <!-- end of Navbar -->
 
     <!-- main -->
-    <main class=" main">
+    <main class="main">
       <div class="container-fluid">
-        <div class="row h-100">
-          <div class="col-3 col-3-main border-left "> 
-            <!-- list one -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-bars"></i></div>
+        <div class="row h-100 main-row">
+          <div class="col-3 col-3-main border-left">
+            <div class="accordion">
+              <!-- list one -->
+              <div
+                class="row "
+                type="button"
+                data-toggle="collapse"
+                data-target="#members"
+              >
+                <!-- <button class="btn btn-link btn-block " style="font-size: 16px;" type="button" data-toggle="collapse" data-target="#collaps1">ساختمان ها</button> -->
+                <div
+                  style="border-bottom: 2px solid black"
+                  class="col-4 p-3 text-center"
+                >
+                  <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                </div>
+                <div
+                  class="col-8 p-2 text-center border"
+                  style="font-size: 18px"
+                >
+                  ساختمان
+                </div>
+              </div>
+              <div class="collapse col-row-main" id="members" data-parent=".accordion">
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    لیست ساختمان ها
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    درخواست پشتیبانی
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    پیام به مدیر
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    لیست مدیران
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    وضعیت فعالیت
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    مدیر پلاس
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    لیست ساکنین
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    وضعیت فعالیت
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    فیلتر ساکنین
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    تراکنش ها
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    کیف پول ساختمان ها
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    کیف پول ساکنین
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    صورت حساب ساختمان ها
+                  </div>
+                </div>
+                <!-- end of list two -->
+              </div>
+              <!-- پایان لیست یک -->
+
+              <!-- list two -->
+              <div
+                class="row"
+                type="button"
+                data-toggle="collapse"
+                data-target="#builds"
+              >
+                <!-- <button class="btn btn-link btn-block " style="font-size: 16px;" type="button" data-toggle="collapse" data-target="#collaps1">ساختمان ها</button> -->
+                <div
+                  style="border-bottom: 2px solid black"
+                  class="col-4 p-3 text-center"
+                >
+                  <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                </div>
+                <div
+                  class="col-8 p-2 text-center border"
+                  style="font-size: 18px"
+                >
+                  ساکنین
+                </div>
+              </div>
+              <div class="collapse col-row-main" id="builds" data-parent=".accordion">
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    لیست ساکنین
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    وضعیت فعالیت
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div
+                    class="col-8 p-2 text-center border"
+                    style="font-size: 18px"
+                  >
+                    فیلتر ساکنین
+                  </div>
+                </div>
+              </div>
+              <!-- end of list two -->
+
+                <!-- list three -->
+              <div
+                class="row"
+                type="button"
+                data-toggle="collapse"
+                data-target="#Financial"
+              >
+                <!-- <button class="btn btn-link btn-block " style="font-size: 16px;" type="button" data-toggle="collapse" data-target="#collaps1">ساختمان ها</button> -->
+                <div
+                  style="border-bottom: 2px solid black"
+                  class="col-4 p-3 text-center"
+                >
+                  <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                </div>
+                <div
+                  class="col-8 p-2 text-center border"
+                  style="font-size: 18px"
+                >
+                  مالی
+                </div>
+              </div>
+              <div class="collapse col-row-main" id="Financial" data-parent=".accordion">
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="col-8 p-2 text-center border" style="font-size: 18px">
+                    تراکنش ها
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="col-8 p-2 text-center border" style="font-size: 18px">
+                    کیف پول ساختمان ها
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="col-8 p-2 text-center border" style="font-size: 18px">
+                    کیف پول ساکنین
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="col-8 p-2 text-center border" style="font-size: 18px">
+                    صورت حساب ساختمان ها
+                  </div>
+                </div>
+              </div>
+                <!-- end of list three -->
+                <!-- list four -->
+              <div
+                class="row"
+                type="button"
+                data-toggle="collapse"
+                data-target="#setting"
+              >
+                <!-- <button class="btn btn-link btn-block " style="font-size: 16px;" type="button" data-toggle="collapse" data-target="#collaps1">ساختمان ها</button> -->
+                <div
+                  style="border-bottom: 2px solid black"
+                  class="col-4 p-3 text-center"
+                >
+                  <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                </div>
+                <div
+                  class="col-8 p-2 text-center border"
+                  style="font-size: 18px"
+                >
+                  تنظیمات
+                </div>
+              </div>
+              <div class="collapse col-row-main" id="setting" data-parent=".accordion">
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="col-8 p-2 text-center border" style="font-size: 18px">
+                     واحد پول
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="col-8 p-2 text-center border" style="font-size: 18px">
+                    نحوه واریز
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="col-8 p-2 text-center border" style="font-size: 18px">
+                    درگاه پرداخت
+                  </div>
+                </div>
+                <!-- end of list two -->
+                <!-- list two -->
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="col-8 p-2 text-center border" style="font-size: 18px">
+                    پنل پیامک
+                  </div>
+                </div>
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="col-8 p-2 text-center border" style="font-size: 18px">
+                    استانها و شهرها
+                  </div>
+                </div>
+                <div class="row">
+                  <div
+                    style="border-bottom: 2px solid black"
+                    class="col-4 p-3 text-center"
+                  >
+                    <i style="font-size: 18px" class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="col-8 p-2 text-center border" style="font-size: 18px">
+                    تصاویر
+                  </div>
+                </div>
+              </div>
+                <!-- end of list four -->
+
             </div>
-            <!-- end of list one -->
-            
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >لیست ساختمان ها</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >درخواست پشتیبانی</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >پیام به مدیر</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >لیست مدیران</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >وضعیت فعالیت</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >مدیر پلاس</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >لیست ساکنین</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >وضعیت فعالیت</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >فیلتر ساکنین</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >تراکنش ها</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >کیف پول ساختمان ها</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >کیف پول ساکنین</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >صورت حساب ساختمان ها</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >صورت حساب ساکنین</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >اطلاعات مالی مدیران</div>
-            </div>
-            <!-- end of list two -->
-            <!-- list two -->
-            <div class="row">
-              <div style="border-bottom: 2px solid black;" class="col-4 p-3 text-center "><i style="font-size: 18px;" class="fa-solid fa-user"></i></div>
-              <div class="col-8  p-2 text-center border" style="font-size: 18px;" >پرونده مالی ساختمان ها</div>
-            </div>
-            <!-- end of list two -->
-            
-          </div>
-          <div class="col-9 ">
-            
           </div>
         </div>
+        <div class="col-9 border"></div>
       </div>
     </main>
     <!-- end of main -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <!-- item one -->
+          <div class="col text-ceter">
+            <input
+              type="text"
+              class="form-control text-center mb-2"
+              disabled="true"
+              placeholder="تعداد ساختمان ها"
+            />
+            <input
+              type="text"
+              class="form-control text-center"
+              disabled="true"
+              placeholder="9"
+            />
+          </div>
 
+          <!-- item two -->
+          <div class="col text-ceter">
+            <input
+              type="text"
+              class="form-control text-center mb-2"
+              disabled="true"
+              placeholder="تعداد کاربران"
+            />
+            <input
+              type="text"
+              class="form-control text-center"
+              disabled="true"
+              placeholder="20"
+            />
+          </div>
+          <!-- item three -->
+          <div class="col text-ceter">
+            <input
+              type="text"
+              class="form-control text-center mb-2"
+              disabled="true"
+              placeholder="موجودی کیف پول ساختمان"
+            />
+            <input
+              type="text"
+              class="form-control text-center"
+              disabled="true"
+              placeholder="2,500,000 ت"
+            />
+          </div>
+          <!-- item four -->
+          <div class="col text-ceter">
+            <input
+              type="text"
+              class="form-control text-center mb-2"
+              disabled="true"
+              placeholder="جمع موجودی کیف پول ساکنین"
+            />
+            <input
+              type="text"
+              class="form-control text-center"
+              disabled="true"
+              placeholder="3,000,000"
+            />
+          </div>
+          <!-- item five -->
+          <div class="col text-ceter">
+            <input
+              type="text"
+              class="form-control text-center mb-2"
+              disabled="true"
+              placeholder="uip"
+            />
+            <input
+              type="text"
+              class="form-control text-center"
+              disabled="true"
+              placeholder="uip"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end offooter -->
     <script src="../bootstrap/jquery-3.5.1.min.js"></script>
     <script src="../bootstrap/popper.min.js"></script>
     <script src="../bootstrap/bootstrap.min.js"></script>

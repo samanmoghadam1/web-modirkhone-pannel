@@ -1,6 +1,8 @@
 body {
   font-family: "Arial", sans-serif;
   background-color: #f8f9fa;
+  /* background-color: #3d444a; */
+
 }
 
 nav {
@@ -25,10 +27,12 @@ nav {
   background-color: #024f59;
 }
 .main {
-  height: 105vh;
-  margin-top: 20px;
+  margin-top: 20px; 
 }
-
+.main-row{
+  border-bottom: 1px solid #000;
+  
+}
 .border-left {
   border-left: 2px solid #343a40 !important;
 }
@@ -36,9 +40,15 @@ nav {
 .row {
   margin-bottom: 10px;
 }
-
+.col-row-main{
+  background-color: #525657 ;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
 .col-3-main {
-  background-color: #343a40;
+  background-color: #253f44; 
+  
   color: #fff;
   padding: 10px;
   border-radius: 5px;
@@ -66,4 +76,11 @@ nav {
 .fa-bars,
 .fa-user {
   font-size: 18px;
+}
+
+.footer{
+  margin-top: 20px;
+}
+.footer-input{
+  background-color: red;
 }
