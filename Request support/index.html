@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="../bootstrap/bootstrap.fa.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+</head>
+<body>
+    <div class="my-container">
+        <div class="container-fluid">
+            <div style="font-size: 20px;">فیلتر ها</div>
+            <div class="row filter-row">
+                <div class="saken-items-bill saken-alone col-6 border-left">
+                    <div class="saken-build">
+                        <div class="saken-info">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> نام ساختمان</span>
+                                </div>
+                                <input type="text" class="form-control" id="debt" value="">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">نام فرستنده</span>
+                                </div>
+                                <input type="text" class="form-control" id="debt" value="">
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">عنوان درخواست</span>
+                                </div>
+                                <input type="text" class="form-control" id="debt" value="">
+                            </div>
+                            
+                
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <button class="btn btn-info w-100" id="vorood">جستجو</button>
+                    </div>
+                
+                </div>
+                <div class="col-6 ">
+                    <div class="saken-build">
+                        <div class="saken-info">
+                            
+                            
+                            <!-- city and addres -->
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">تاریخ</span>
+                                </div>
+                                <input type="text" class="form-control" id="debt" value="">
+                            </div>
+                            
+                            <div class="input-group d-flex ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">وضعیت</span>
+                                </div>
+                                
+                                
+                                <div >
+                                        <label for="bedehkar">بدهکر </label>
+                                        <input id="bedehkar" type="radio" name="Condition">
+                                    </div>
+                                    <div >
+                                        <label for="bestankar">بستانکار</label>
+                                        <input id="bestankar" type="radio" name="Condition" >
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">استان </span>
+                                    </div>
+                                    <select name="" id="province"  class="form-control">
+                
+                                    </select>
+                
+                                </div>
+                            <!-- end of city and addres -->
+            
+                            
+                        </div>
+                    </div>
+                    <div class="items-button">
+                        <input class="btn btn-info w-100" type="submit" value="جستجو">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 text-center result" >
+                <div class="col-2 my-auto" style="font-size: 65px; ">1</div> 
+                <div class="col-8  ">
+                    <input type="text" class="form-control text-center mb-3" disabled > 
+                    <input type="text" class="form-control text-center mb-3" disabled >
+                    <input type="text" class="form-control text-center" disabled >
+                </div>
+                <div class="col-2 " style="font-size: 65px;">
+                    <i class="fa-solid fa-award text-warning my-auto"></i>
+                </div>
+            </div>
+            <div class="row mt-5 text-center result" >
+                <div class="col-2 my-auto" style="font-size: 65px; ">2</div> 
+                <div class="col-8  ">
+                    <input type="text" class="form-control text-center mb-3" disabled > 
+                    <input type="text" class="form-control text-center mb-3" disabled >
+                    <input type="text" class="form-control text-center" disabled >
+                </div>
+                <div class="col-2 my-auto" style="font-size: 65px;">
+                    <i class="fa-solid fa-award text-warning my-auto"></i>
+                </div>
+            </div>
+            <div class="row mt-5 text-center result" >
+                <div class="col-2 my-auto" style="font-size: 65px; ">3</div> 
+                <div class="col-8  ">
+                    <input type="text" class="form-control text-center mb-3" disabled > 
+                    <input type="text" class="form-control text-center mb-3" disabled >
+                    <input type="text" class="form-control text-center" disabled >
+                </div>
+                <div class="col-2 " style="font-size: 65px;">
+                    <i class="fa-solid fa-award text-warning my-auto"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- second div -->
+        
+    </div>
+
+    <script src="../bootstrap/jquery-3.5.1.min.js"></script>
+    <script src="../bootstrap/popper.min.js"></script>
+    <script src="../bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
