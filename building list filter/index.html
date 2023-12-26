@@ -17,7 +17,9 @@
 <body>
     <div class="my-container">
         <div class="container-fluid">
-            <div style="font-size: 20px;">فیلتر ها</div>
+            <fieldset>
+                <legend>فیلتر</legend>
+            </fieldset>
             <div class="row filter-row">
                 <div class="saken-items-bill saken-alone col-6 border-left">
                     <div class="saken-build">
@@ -34,25 +36,20 @@
                                 </div>
                                 <input type="text" class="form-control" id="debt" value="">
                             </div>
-                            <div class="input-group d-flex ">
+                            <div class="input-group d-flex">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">مدیر پلاس ؟ </span>
                                 </div>
-                                
-                                
-                                    <div >
-                                        <label for="yes">دارد </label>
-                                        <input id="yes" type="radio" name="modirPlus">
-                                    </div>
-                                    <div >
-                                        <label for="no">ندارد </label>
-                                        <input id="no" type="radio" name="modirPlus" >
-                                    </div>
-                                
-
-
-                                
+                                <div class="custom-control custom-switch mr-5" dir="ltr" >
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="custom-control-label" for="customSwitch1">دارد</label>
+                                </div>
+                                <div class="custom-control custom-switch mr-5" dir="ltr" >
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                    <label class="custom-control-label" for="customSwitch2">ندارد</label>
+                                </div>
                             </div>
+                            
                             
                 
                         </div>
@@ -93,14 +90,14 @@
                                 </div>
                                 
                                 
-                                    <div >
-                                        <label for="bedehkar">بدهکر </label>
-                                        <input id="bedehkar" type="radio" name="Condition">
-                                    </div>
-                                    <div >
-                                        <label for="bestankar">بستانکار</label>
-                                        <input id="bestankar" type="radio" name="Condition" >
-                                    </div>
+                                <div class="custom-control custom-switch mr-5" dir="ltr" >
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                    <label class="custom-control-label" for="customSwitch3">ندارد</label>
+                                </div>
+                                <div class="custom-control custom-switch mr-5" dir="ltr" >
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                                    <label class="custom-control-label" for="customSwitch4">ندارد</label>
+                                </div>
                                 
 
 

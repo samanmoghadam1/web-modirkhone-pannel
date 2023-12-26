@@ -32,7 +32,35 @@
       } 
       .row{
         background-color: #024f59;
+      } 
+      
+     @media screen and (max-width  : 1400px) {
+        .panel-name{
+            font-size: 20px;
+        }
+        .input{
+        font-size: 20px;
+      } 
+      .navbar-item-icon{
+        font-size: 30px;
       }
+     }
+     @media screen and (max-width  : 768px) {
+        .panel-name{
+            font-size: 13px;
+        }
+        .input{
+        font-size: 13px;
+      }
+     }
+     @media screen and (max-width : 576px) {
+        .input{
+        font-size: 10px;
+      } 
+      .navbar-item-icon{
+        font-size: 18px;
+      }
+     }
     </style>
   </head>
   <body>
@@ -40,52 +68,35 @@
     <nav class="text-center">
       <div class="container-fluid">
         <div class="row p-2 border-bottom">
+          
           <div
-            class="navbar-item col-3 " 
-            style="border-left: 3px dotted white;"
-          >
-            <form text-center>
-              <input
-                type="text"
-                class="form-control text-center mb-2"
-                disabled="true"
-                placeholder="20 / 8 / 1402"
-              />
-              <input
-                type="text"
-                class="form-control text-center"
-                disabled="true"
-                placeholder="20 : 15"
-              />
-            </form>
-          </div>
-          <div
-            class="navbar-item col-5  text-center align-items-center text-center"
-            style="border-left: 3px dotted white;font-size: 20px;"
+            class="navbar-item col-lg-7 col-sm-4 col-5  text-center align-items-center  panel-name"
+            
           >
             پنل مدیریت مدیرخونه
           </div>
           <div
-            class="navbar-item col-3  text-center align-items-center text-center" 
-            style="border-left: 1px solid  white"
+            class="navbar-item col-lg-3 col-sm-6 col-5  text-center align-items-center text-center" 
+            
           >
             <input
               type="text"
-              class="form-control text-center mb-2"
+              class="form-control text-center mb-2 input"
               disabled="true"
-              placeholder="نام کاربری"
+              value="نام کاربری" 
+              
             />
             <input
               type="text"
-              class="form-control text-center"
+              class="form-control text-center input"
               disabled="true"
-              placeholder="saman_moghadam"
+              value="saman"
             />
           </div>
           <div
-            class="navbar-item  col-1  text-center align-items-center text-center"
+            class="navbar-item  col text-center align-items-center text-center"
           >
-            <i class="fa-solid fa-moon navbar-item-icon" style="font-size: 30px;"></i>
+            <i class="fa-solid fa-moon navbar-item-icon" ></i>
           </div>
         </div>
       </div>
