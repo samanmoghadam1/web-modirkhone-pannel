@@ -19,52 +19,35 @@
     <nav class="text-center">
       <div class="container-fluid">
         <div class="row navbar-row p-2 border-bottom">
-          <div class="navbar-item col-3" style="border-left: 3px dotted white">
-            <form text-center>
-              <input
-                type="text"
-                class="form-control text-center mb-2"
-                disabled="true"
-                placeholder="20 / 8 / 1402"
-              />
-              <input
-                type="text"
-                class="form-control text-center"
-                disabled="true"
-                placeholder="20 : 15"
-              />
-            </form>
-          </div>
+          
           <div
-            class="navbar-item col-5 text-center align-items-center text-center"
-            style="border-left: 3px dotted white; font-size: 20px"
+            class="navbar-item col-lg-7 col-sm-4 col-5  text-center align-items-center  panel-name"
+            
           >
             پنل مدیریت مدیرخونه
           </div>
           <div
-            class="navbar-item col-3 text-center align-items-center text-center"
-            style="border-left: 1px solid white"
+            class="navbar-item col-lg-3 col-sm-6 col-5  text-center align-items-center text-center" 
+            
           >
             <input
               type="text"
-              class="form-control text-center mb-2"
+              class="form-control text-center mb-2 input"
               disabled="true"
-              placeholder="نام کاربری"
+              value="نام کاربری" 
+              
             />
             <input
               type="text"
-              class="form-control text-center"
+              class="form-control text-center input"
               disabled="true"
-              placeholder="saman_moghadam"
+              value="saman"
             />
           </div>
           <div
-            class="navbar-item col-1 text-center align-items-center text-center"
+            class="navbar-item  col text-center align-items-center text-center"
           >
-            <i
-              class="fa-solid fa-moon navbar-item-icon"
-              style="font-size: 30px"
-            ></i>
+            <i class="fa-solid fa-moon navbar-item-icon" ></i>
           </div>
         </div>
       </div>
@@ -598,7 +581,129 @@
               <!-- end of list four -->
             </div>
           </div>
-          <div class="col-9 border "></div>
+          <div class="col-9 border " style="background-color: #fff;">
+            <div class="my-container">
+              <div class="container-fluid">
+                  <div style="font-size: 20px;"><fieldset>
+                      <legend>فیلتر</legend>
+                  </fieldset></div>
+                  <div class="row filter-row">
+                      <div class="saken-items-bill saken-alone col-6 border-left">
+                          <div class="saken-build">
+                              <div class="saken-info">
+                                  <div class="input-group">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text"> نام ساختمان</span>
+                                      </div>
+                                      <input type="text" class="form-control" id="debt" value="">
+                                  </div>
+                                  <div class="input-group">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text">نام فرستنده</span>
+                                      </div>
+                                      <input type="text" class="form-control" id="debt" value="">
+                                  </div>
+                                  <div class="input-group">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text">عنوان درخواست</span>
+                                      </div>
+                                      <input type="text" class="form-control" id="debt" value="">
+                                  </div>
+                                  
+                      
+                              </div>
+                          </div>
+                          <div class="items-button">
+                              <button class="btn btn-info w-100" id="vorood">جستجو</button>
+                          </div>
+                      
+                      </div>
+                      <div class="col-6 ">
+                          <div class="saken-build">
+                              <div class="saken-info">
+                                  
+                                  
+                                  <!-- city and addres -->
+                                  <div class="input-group">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text">تاریخ</span>
+                                      </div>
+                                      <input type="text" class="form-control" id="debt" value="">
+                                  </div>
+                                  
+                                  <div class="input-group d-flex ">
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text">وضعیت</span>
+                                      </div>
+                                      
+                                      
+                                      <div class="custom-control custom-switch mr-5" dir="ltr" >
+                                          <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                          <label class="custom-control-label" for="customSwitch1">بدهکار</label>
+                                      </div>
+                                      <div class="custom-control custom-switch mr-5" dir="ltr" >
+                                          <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                          <label class="custom-control-label" for="customSwitch2">بستانکار</label>
+                                      </div>
+                                          
+                                          
+                                          
+                                          
+                                      </div>
+                                      <div class="input-group">
+                                          <div class="input-group-prepend">
+                                              <span class="input-group-text">استان </span>
+                                          </div>
+                                          <select name="" id="province"  class="form-control">
+                      
+                                          </select>
+                      
+                                      </div>
+                                  <!-- end of city and addres -->
+                  
+                                  
+                              </div>
+                          </div>
+                          <div class="items-button">
+                              <input class="btn btn-info w-100" type="submit" value="جستجو">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row mt-5 text-center result" >
+                      <div class="col-2 my-auto" style="font-size: 65px; ">1</div> 
+                      <div class="col-8  ">
+                          <input type="text" class="form-control text-center mb-3" disabled > 
+                          <input type="text" class="form-control text-center mb-3" disabled >
+                          <input type="text" class="form-control text-center" disabled >
+                      </div>
+                      <div class="col-2 my-auto" style="font-size: 65px;">
+                          <i class="fa-solid fa-award text-warning "></i>
+                      </div>
+                  </div>
+                  <div class="row mt-5 text-center result" >
+                      <div class="col-2 my-auto" style="font-size: 65px; ">2</div> 
+                      <div class="col-8  ">
+                          <input type="text" class="form-control text-center mb-3" disabled > 
+                          <input type="text" class="form-control text-center mb-3" disabled >
+                          <input type="text" class="form-control text-center" disabled >
+                      </div>
+                      <div class="col-2 my-auto" style="font-size: 65px;">
+                          <i class="fa-solid fa-award text-warning my-auto"></i>
+                      </div>
+                  </div>
+                  <div class="row mt-5 text-center result" >
+                      <div class="col-2 my-auto" style="font-size: 65px; ">3</div> 
+                      <div class="col-8  ">
+                          <input type="text" class="form-control text-center mb-3" disabled > 
+                          <input type="text" class="form-control text-center mb-3" disabled >
+                          <input type="text" class="form-control text-center" disabled >
+                      </div>
+                      <div class="col-2 " style="font-size: 65px;">
+                          <i class="fa-solid fa-award text-warning my-auto"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
       </div>
     </main>
