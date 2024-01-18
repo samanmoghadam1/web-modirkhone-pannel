@@ -32,7 +32,7 @@ svg{
   background-color: #024f59;
 } 
 
-@media screen and (max-width  : 1400px) {
+@media screen and (max-width  : 2000px) {
   .panel-name{
       font-size: 20px;
   }
