@@ -1,13 +1,27 @@
 body {
   font-family: "Arial", sans-serif;
   background-color: #f8f9fa;
-  /* background-color: #3d444a; */ 
-  background-image: url("../img/bg.png");
+  background: linear-gradient(45deg, #161816, #0e2624);
 
 }
-
+::-webkit-scrollbar {
+  width: 15px;
+  background-color:  rgb(14, 38, 36) ;
+} 
+::-webkit-scrollbar-thumb{
+  background-color: rgb(66, 66, 66); 
+  border-radius: 10px;
+  transition: ease .3s;
+}
+::-webkit-scrollbar-thumb:active{
+  background-color: rgba(8, 222, 255, 0.6) ;
+}
 nav {
-  color: #fff;
+  color: #fff; 
+  max-width: 100%;
+} 
+nav .container-fluid{
+  max-width: 100%;
 }
 @font-face {
   font-family: iransans;
@@ -29,7 +43,7 @@ svg{
   cursor: pointer;
 } 
 .navbar-row{
-  background-color: #024f59;
+  /* background: linear-gradient(45deg, #161816, #0e2624); */
 } 
 
 @media screen and (max-width  : 2000px) {
@@ -63,9 +77,9 @@ svg{
   margin-top: 20px; 
 }
 .main-row{
-  /* border-bottom: 1px solid #000; */
-  
-}
+
+} 
+
 .border-left {
   border-left: 2px solid #343a40 !important;
 }
@@ -81,10 +95,12 @@ svg{
 }
 .col-3-main {
   background-color: #253f44; 
-  
   color: #fff;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 5px; 
+  height: 750px; 
+  overflow-x: hidden; 
+  overflow-y: scroll;
 }
 
 .col-3 i {
@@ -120,13 +136,19 @@ svg{
 
 
 /* request support */ 
+
 @font-face {
   font-family: iran;
   src: url("./../font/IRANSansWeb.ttf");
 }
+.main-row{
+  box-shadow: 0 0 10px  white;
+}
 body{
   font-family: iran;
 }
+
+
 .my-container{
   border: 1px solid #ced4da;
 }
@@ -194,4 +216,38 @@ legend {
   font-weight: bold;
   color: #333;
 }
+.footer {
+  padding: 20px 0;
+  /* background: linear-gradient(45deg, #161816, #0e2624); */
+}
+
+.container-fluid {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.col {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.form-control {
+  text-align: center;
+}
+
+/* اضافه کردن استایل به placeholder ها */
+input::placeholder {
+  color: #6c757d;
+}
+
+/* استایل دهی به موقعیت فاصله بین فرم‌ها */
+.mb-2 {
+  margin-bottom: 20px;
+}
+
 /* end of request support */
