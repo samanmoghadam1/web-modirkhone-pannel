@@ -1,20 +1,32 @@
+
 body {
   font-family: "Arial", sans-serif;
-  background-color: #f8f9fa;
-  background: linear-gradient(45deg, #161816, #0e2624);
+
+  background: var(--background-body) ;
+  color: var(--color) ;
 
 }
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 12px;
   background-color:  rgb(14, 38, 36) ;
 } 
 ::-webkit-scrollbar-thumb{
   background-color: rgb(66, 66, 66); 
-  border-radius: 10px;
-  transition: ease .3s;
+  border-radius: 20px;
+
 }
 ::-webkit-scrollbar-thumb:active{
   background-color: rgba(8, 222, 255, 0.6) ;
+} 
+
+:root{ 
+  --background-body: #f8f9fa ; 
+  --navbar-color : #024f59 ;  
+  --color : #000 ;
+}
+.dark-mode {
+  --background-body: linear-gradient(45deg, #161816, #0e2624);
+  --navbar-color : linear-gradient(45deg, #161816, #0e2624) ; 
 }
 nav {
   color: #fff; 
@@ -43,7 +55,7 @@ svg{
   cursor: pointer;
 } 
 .navbar-row{
-  /* background: linear-gradient(45deg, #161816, #0e2624); */
+  background-color: var(--navbar-color);
 } 
 
 @media screen and (max-width  : 2000px) {
@@ -76,9 +88,6 @@ svg{
 .main {
   margin-top: 20px; 
 }
-.main-row{
-
-} 
 
 .border-left {
   border-left: 2px solid #343a40 !important;
@@ -133,7 +142,9 @@ svg{
 .footer-input{
   background-color: red;
 }
-
+.input-group-prepend span {
+  width: 100%;
+}
 
 /* request support */ 
 
@@ -142,7 +153,7 @@ svg{
   src: url("./../font/IRANSansWeb.ttf");
 }
 .main-row{
-  box-shadow: 0 0 10px  white;
+  box-shadow: 0 0 20px  #4caf50;
 }
 body{
   font-family: iran;
@@ -240,12 +251,10 @@ legend {
   text-align: center;
 }
 
-/* اضافه کردن استایل به placeholder ها */
 input::placeholder {
   color: #6c757d;
 }
 
-/* استایل دهی به موقعیت فاصله بین فرم‌ها */
 .mb-2 {
   margin-bottom: 20px;
 }
