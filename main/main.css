@@ -111,7 +111,11 @@ svg{
   overflow-x: hidden; 
   overflow-y: scroll;
 }
-
+.filters-and-result { 
+  height: 750px ; 
+  overflow-x: hidden; 
+  overflow-y: scroll;
+}
 .col-3 i {
   color: #17a2b8;
 }
